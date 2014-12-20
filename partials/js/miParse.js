@@ -2,11 +2,11 @@ Parse.initialize("wCxAtie3514LsUqYtyn93WG4BoYoCqRzevStYEEC", "ALvgMhLwrQUABjYDmY
 
 function mostrarElementos() {
 
-    var PantallaPrincipal = Parse.Object.extend("Colegios");
+    var PantallaPrincipal = Parse.Object.extend("Categorias");
 
     var query = new Parse.Query(PantallaPrincipal);
     
-    query.ascending("NombreColegios");
+    query.ascending("NombreCategoria");
 
     query.find({
         success: function(results) {
@@ -15,9 +15,10 @@ function mostrarElementos() {
 
                 var object = results[i];
 
-                var nombre = object.get('NombreColegios');
+                var nombre = object.get('NombreCategoria');
                 var descripcion = object.get('Descripcion');
                 var imagen = object.get('Imagen');
+                var imagen2 = object.get('Imagen2');
                 var direccion = object.get('Direccion');
 
                 var contenido = ""
@@ -25,8 +26,9 @@ function mostrarElementos() {
                 ////contenido += '<div class="thumbnail">'
                 contenido += '<br>'
                 contenido += '<h5 align="center">' + nombre + '</h5>'
-                contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '"">'
-                contenido += '<br>'
+                ///contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '"">'
+                contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '" ng-src="{{imagen3}}" ng-mouseenter="imagen3=' + imagen2 + '" ng-mouseleave="imagen3=' + imagen + '" >'
+                contenido += '<a href="#/hola"> ver detalles </a>'
                 contenido += '<br>'
                 contenido += '</div>'
                 contenido += '</div>'

@@ -28,6 +28,7 @@ function mostrarElementos() {
                 contenido += '<h5 align="center">' + nombre + '</h5>'
                 ///contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '"">'
                 contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '" ng-src="{{imagen3}}" ng-mouseenter="imagen3=' + imagen2 + '" ng-mouseleave="imagen3=' + imagen + '" >'
+                contenido += '<a href="#/detalles"> ver detalles </a>'
                 contenido += '<br>'
                 contenido += '</div>'
                 contenido += '</div>'
