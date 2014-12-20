@@ -23,7 +23,7 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 70;
     color: #333;
 }
 body { 
@@ -42,6 +42,16 @@ h1 {
 	font-size: 35px;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+h6 {
+	font-size: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h4 {
+    color: red;
 }
 
 
@@ -105,14 +115,15 @@ a:after {
 
 .navbar-inverse {
 	padding-bottom: 0px;
-	padding-top: 5px;
-    height: 154px;
+	padding-top: 0px;
 
 }
 
 .navbar-inverse {
 	background-color: #1abc9c;
 	border-color: #16a085;
+    height: 131px;
+
 }
 
 .navbar-inverse .navbar-nav > li > a {

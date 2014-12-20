@@ -20,15 +20,18 @@ function mostrarElementos() {
                 var imagen = object.get('Imagen');
                 var imagen2 = object.get('Imagen2');
                 var direccion = object.get('Direccion');
+                var descripcion = object.get('descripcion');
+                var colegio = object.get('colegio');
 
                 var contenido = ""
                 contenido += '<div class="col-md-3 col-xs-6">'
                 ////contenido += '<div class="thumbnail">'
                 contenido += '<br>'
-                contenido += '<h5 align="center">' + nombre + '</h5>'
                 ///contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '"">'
                 contenido += '<a href="' + direccion +'"><img class="img-responsive center-block" src="' + imagen + '" ng-src="{{imagen3}}" ng-mouseenter="imagen3=' + imagen2 + '" ng-mouseleave="imagen3=' + imagen + '" >'
-                contenido += '<a href="#/detalles"> ver detalles </a>'
+                contenido += '<h4 align="center">' + colegio + '</h4>'
+                contenido += '<h5 align="center">' + nombre + '</h5>'
+                contenido += '<h6 align="center">' + descripcion + '</h6>'
                 contenido += '<br>'
                 contenido += '</div>'
                 contenido += '</div>'
